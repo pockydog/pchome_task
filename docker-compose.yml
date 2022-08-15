@@ -1,0 +1,22 @@
+version: "3.5"
+
+services:
+  pchome_task:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pchome_task
+    image: pchome_task
+    env_file: dev.env
+    ports:
+      - '8022:5001'
+    tty: true
+    volumes:
+      - ./src:/app:rw
+    networks:
+      - pchome-network
+
+networks:
+  pchome-network:
+    external:
+      name: pchome-network

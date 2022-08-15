@@ -1,0 +1,8 @@
+requests==2.27.1
+BeautifulSoup4==4.11.1
+
+SQLAlchemy==1.4.36
+flask==2.1.2
+Flask-SQLAlchemy==2.5.1
+PyMySQL==1.0.2
+
